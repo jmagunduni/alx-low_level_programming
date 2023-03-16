@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- * main - write a C program that prints using puts statement
- * returns: 0
+/**
+ * main - Entry point
+ * Description: 'the program prints message using the puts statement'
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
