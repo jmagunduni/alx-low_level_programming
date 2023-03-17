@@ -1,12 +1,18 @@
 #include <stdio.h>
+
 /**
-	 * This is the preferred style for multi-line
-	 * comments in C source code.
-	 * Please use it consistently.
-	 *
-	 * Description:  A column of asterisks on the left side,
-	 * with beginning and ending almost-blank lines.
-	 */
+ * main - Prints numbers from 0 to 9.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }
