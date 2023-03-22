@@ -1,13 +1,13 @@
-#include "main.h"
-	/**
-	* main - Short description, single line
-	* @parameterx: Description of parameter x
-	(* a blank line
-	 * Description: Longer description of the function)?
-	(* section header: Section description)*
-	* Return: Description of the returned value
-	*/
+/**
+* main - prints word _putchar
+*
+* Description: Write a program that prints _putchar,
+* followed by a new line
+* The program should return 0
+* Return: 0 Always
+*/
 
+#include "main.h"
 
 	int main(void)
 	{
