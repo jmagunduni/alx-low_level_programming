@@ -18,7 +18,7 @@ int print_last_digit(int n)
 	modvalue = n % 10;
 
 	if (modvalue < 0)
-		modvalue = -a;
+		modvalue = -modvalue;
 
 	_putchar(modvalue + '0');
 
