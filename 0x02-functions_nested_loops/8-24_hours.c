@@ -25,8 +25,8 @@
 				_putchar((minutes / 10) + '0');
 				_putchar((minutes % 10) + '0');
 				_putchar('\n');
-				j++;
+				minutes++;
 			}
-			i++;
+			hour++;
 		}
 	}
