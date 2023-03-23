@@ -1,32 +1,23 @@
-/*
-	 * File: 101-natural.c
-	 * Auth: vincent kip
-	 */
+/**
+* main- prints the n times table, starting with 0
+* Description: Write a program that computes and
+* prints the sum of all the multiples of 3 or 5
+* below 1024 (excluded), followed by a new line
+* Return: 0 ALWAYS
+*/
+#include <stdio.h>
 
-
-	#include <stdio.h>
-
-
-	/**
-	 * main - Lists all the natural numbers below 1024 (excluded)
-	 *        that are multiples of 3 or 5.
-	 *
-	 * Return: Always 0.
-	 */
-	int main(void)
+int main(void)
 	{
-		int i, sum = 0;
+		int counter, totalSum = 0;
 
-
-		for (i = 0; i < 1024; i++)
+		for (counter = 0; counter < 1024; i++)
 		{
-			if ((i % 3) == 0 || (i % 5) == 0)
-				sum += i;
+			if ((counter % 3) == 0 || (counter % 5) == 0)
+				totalSum += counter;
 		}
 
-
-		printf("%d\n", sum);
-
+		printf("%d\n", totalSum);
 
 		return (0);
 	}
