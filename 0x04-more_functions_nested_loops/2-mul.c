@@ -1,5 +1,5 @@
 /**
- * mul - multiply 2 integer values 
+ * mul - multiply 2 integer values
  * @a: first int
  * @b: second int
  * Return: addition of the multiplicattion
