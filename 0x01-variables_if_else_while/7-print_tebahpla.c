@@ -7,11 +7,12 @@
  */
 int main(void)
 {
-	char ch;
+	char character;
 
-	for (ch = 'z'; ch >= 'a'; ch--)
+	/*how is it possible to loop through characters:ASCII*/
+	for (character = 'z'; character >= 'a'; character--)
 	{
-		putchar(ch);
+		putchar(character);
 	}
 	putchar('\n');
 	return (0);

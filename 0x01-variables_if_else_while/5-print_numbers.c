@@ -1,17 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
+ * main - write a program which prints numbers from 0 to 9.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	/*data declaration section*/
+	int counter;
 
-	for (i = 0; i < 10; i++)
+	/*this program will loop from 0 - 9 exclu 10*/
+	for (counter = 0; counter < 10; counter++)
 	{
-		printf("%d", i);
+		printf("%d", counter);
 	}
 	putchar('\n');
 	return (0);

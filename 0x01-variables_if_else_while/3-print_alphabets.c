@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	/*data declaration section*/
+	/*array of all alphabets including process*/
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int counter;
 
-	for (i = 0; i < 52; i++)
+	for (counter = 0; counter < 52; counter++)
 	{
-		putchar(alp[i]);
+		putchar(alp[counter]);
 	}
 	putchar('\n');
 	return (0);
 }
-

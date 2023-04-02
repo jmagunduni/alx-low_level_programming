@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
+ * main - write a program which prints single digits
+ * numbers of base 10.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	/*data declaration section*/
 	int counter;
 
 	for (counter = 48; counter < 58; i++)
