@@ -1,0 +1,31 @@
+#include "main.h"
+ /**
+ * _strcat - this function concatenate
+ * two strings
+ * @dest: the value to be caputured
+ * by user
+ * @src: the value to be caputured
+ * by the user
+ * Return: void
+ */
+char *_strcat(char *dest, char *src)
+{
+	int counteri;
+	int counterj;
+
+	counteri = 0;
+	while (dest[counteri] != '\0')
+	{
+		counteri++;
+	}
+	counterj = 0;
+	while (src[counterj] != '\0')
+	{
+		dest[counteri] = src[counterj];
+		counteri++;
+		counterj++;
+	}
+
+	dest[counteri] = '\0';
+	return (dest);
+}
