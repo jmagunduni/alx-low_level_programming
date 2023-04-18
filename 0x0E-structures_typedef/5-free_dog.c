@@ -10,8 +10,8 @@ void free_dog(dog_t *d)
 	/*clear / frees the memory allocated to structure of the dog*/
 	if (d)
 	{
-		free(d);
 		free(d->name);
 		free(d->owner);
+		free(d);
 	}
 }
