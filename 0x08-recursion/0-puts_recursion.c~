@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * _puts_recursion - copy of puts function
+ * * @s: input
+ * Return: Always 0 (Success)
+ */
+void _puts_recursion(char *pointer)
+{
+	if (*pointer)
+	{
+		_putchar(*pointer);
+		_puts_recursion(pointer + 1);
+	}
+
+	else
+		_putchar('\n');
+}

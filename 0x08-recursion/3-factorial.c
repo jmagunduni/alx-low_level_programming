@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * factorial - this function returns factorial value
+ * of the number
+ * @factorialAmt: number to return the factorial from
+ *
+ * Return: factorial of n
+ */
+int factorial(int factorialAmt)
+{
+	if (factorialAmt < 0)
+		return (-1);
+	if (factorialAmt == 0)
+		return (1);
+	return (factorialAmt * factorial(factorialAmt - 1));
+}
