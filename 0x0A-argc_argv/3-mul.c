@@ -1,14 +1,13 @@
-
 #include <stdio.h>
 #include "main.h"
 
 /**
  * _atoi - this function will convert a string to an integer
- * @s: string to be converted
+ * @string: string to be converted
  *
  * Return: the int converted from the string
  */
-int _atoi(char *s)
+int _atoi(char *string)
 {
 	int counter, d, n, length, f, digit;
 
@@ -19,22 +18,22 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-	while (s[length] != '\0')
+	while (string[length] != '\0')
 		length++;
 
 	while (counter < length && f == 0)
 	{
-		if (s[counter] == '-')
+		if (string[counter] == '-')
 			++d;
 
-		if (s[counter] >= '0' && s[counter] <= '9')
+		if (string[counter] >= '0' && string[counter] <= '9')
 		{
-			digit = s[counter] - '0';
+			digit = string[counter] - '0';
 			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
 			f = 1;
-			if (s[counter + 1] < '0' || s[counter + 1] > '9')
+			if (string[counter + 1] < '0' || string[counter + 1] > '9')
 				break;
 			f = 0;
 		}
