@@ -1,33 +1,56 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
-**array_range - this function creates an array of integers
-*@min: this is the minimum range of the values stored
-*@max:this is the maximum range of the values stored
-*and the number of elements
-*Return: this function will return the pointer to the
-*new array
+ **_memset - this function sets the memory
+ *with a constant byte
+ *@s:this is the memory which will be filled
+ *@b:this is the character to be copied
+ *@n:this is the number of time that b char
+ *will be copied
+ *Return: this function will return the pointer
+ *for the memory area of s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+
+unsigned int cnt_i;
+
+for (cnt_i = 0; cnt_i < n; cnt_i++)
+{
+s[cnt_i] = b;
+}
+
+return (s);
+
+}
+
+/**
+**_calloc - this function allocates the memory
+*of an array
+*@nmemb: this is the total number of elements
+*in the array
+*@size: this is the actual size of each element
+*in the array
+*Return: this function returns the pointer to
+*the allocated memory
 */
 
-int *array_range(int min, int max)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int *pntr;
-int cnt_i;
-int arr_size;
 
-if (min > max)
+char *pntr;
+
+if (nmemb == 0 || size == 0)
 return (NULL);
 
-arr_size = max - min + 1;
-
-pntr = malloc(sizeof(int) * arr_size);
+pntr = malloc(size * nmemb);
 
 if (pntr == NULL)
 return (NULL);
 
-for (cnt_i = 0; min <= max; cnt_i++)
-pntr[cnt_i] = min++;
+_memset(pntr, 0, nmemb * size);
 
 return (pntr);
 
