@@ -31,7 +31,7 @@ pntr = malloc(sizeof(char) * (len1 + n + 1));
 else
 pntr = malloc(sizeof(char) * (len1 + len2 + 1));
 
-if (!s)
+if (!pntr)
 return (NULL);
 
 while (cnt_i < len1)
