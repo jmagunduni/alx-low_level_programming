@@ -50,7 +50,7 @@ pntr[cnt_i] = old_pntr[cnt_i];
 if (new_size > old_size)
 {
 for (cnt_i = 0; cnt_i < old_size; cnt_i++)
-pntr[cnt_i] = old_ptr[cnt_i];
+pntr[cnt_i] = old_pntr[cnt_i];
 }
 
 free(ptr);
