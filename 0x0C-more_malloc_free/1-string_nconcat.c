@@ -42,4 +42,12 @@ cnt_i++;
 
 while (n < len2 && cnt_i < (len1 + n))
 pntr[cnt_i++] = s2[cnt_j++];
+
+while (n >= len2 && cnt_i < (len1 + len2))
+pntr[cnt_i++] = s2[cnt_j++];
+
+pntr[cnt_i] = '\0';
+
+return (pntr);
+
 }
