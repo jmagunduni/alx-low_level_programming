@@ -16,7 +16,7 @@ while (h)
 if (!h->string)
 printf("[0] (nil)\n");
 else
-printf("[%u] %s\n", h->len, h->str);
+printf("[%u] %s\n", h->length, h->string);
 h = h->next;
 size++;
 }
