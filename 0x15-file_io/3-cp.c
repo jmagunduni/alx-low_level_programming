@@ -19,11 +19,11 @@ void close_file(int fd);
  */
 int main(int argc, char *argv[])
 {
-	int fromfile;
-    int tofile;
-    int readfile;
-    int writefile;
-	char *buffer;
+int fromfile;
+int tofile;
+int readfile;
+int writefile;
+char *buffer;
 
 	if (argc != 3)
 	{
